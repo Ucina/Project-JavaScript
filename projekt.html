@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang=PL>
+<head>
+     <meta charset=UTF-8>
+	 <title>Projekt</title>
+	 <style>
+	 body
+	 {
+	background-color: #99CCFF;
+	 
+	 }
+	 .zwierzaki {
+	 position:relative;
+	 margin-left: auto;
+    margin-right: auto;
+	 background-color: red;
+	 margin-top: 40px;
+	 margin-bottom: 0;
+	 height: 300px;
+	width: 1440px;
+	border-top-left-radius: 30px;
+	 border-top-right-radius: 30px;
+	 z-index: 1;
+	 }
+	 img
+	 {
+	 border-top-left-radius: 20px;
+	 border-top-right-radius: 20px;
+	 border-bottom-left-radius: 20px;
+	 border-bottom-right-radius: 20px;
+	 margin-top: 50px;
+	  }
+	  
+	 .nazwazwierzeta {
+	 position:relative;
+	 background-color: #6666FF;
+	 width: 800px;
+	 margin-left: auto;
+    margin-right: auto;
+	text-align: center;
+	font-size: 30px;
+	border-top-left-radius: 20px;
+	 border-top-right-radius: 20px;
+	 border-bottom-left-radius: 20px;
+	 border-bottom-right-radius: 20px;
+	 margin-top: -50px;
+	 z-index: 3;
+	}
+	
+	
+	
+	 .opisz {
+	 text-align: center;
+	 background-color: #66FF66;
+	 width: 1440px;
+	 height: 300px;
+	 margin-left: auto;
+    margin-right: auto;
+	 margin-top: -50px;
+	z-index: 2;
+	border-bottom-left-radius: 30px;
+	 border-bottom-right-radius: 30px;
+	 }
+	 
+	 </style>
+	 <script>
+	 var opis_z=["<br><br><br> „Co słychać, panie tygrysie?”<br>„A nic. Nudzi mi się”.<br>„Czy chciałby pan wyjść zza tych krat?”<br>„Pewnie. Przynajmniej bym pana zjadł”.",
+	 "<br><br><br> „Papużko, papużko,<br>Powiedz mi coś na uszko”.<br>„Nic nie powiem, boś ty plotkarz,<br>Powtórzysz każdemu, kogo spotkasz”.",
+	 "<br><br><br>Dzik jest dziki, dzik jest zły,<br>Dzik ma bardzo ostre kły.<br>Kto spotyka w lesie dzika,<br>Ten na drzewo szybko zmyka.",
+	 "<br><br><br>„Skąd ty jesteś, krokodylu?”<br>„Ja? Znad Nilu.<br>Wypuść mnie na kilka chwil,<br>To zawiozę cię nad Nil”.",
+	 "<br><br><br>Struś ze strachu<br>Ciągle głowę chowa w piachu,<br>Więc ma opinię mazgaja.<br>A nadto znosi jaja wielkości strusiego jaja.",
+	 "<br><br><br>Żółw chciał pojechać koleją,<br>Lecz koleje nie tanieją.<br>Żółwiowi szkoda pieniędzy:<br>„Pójdę pieszo, będę prędzej”."];
+	 var nazwa=["Tygrys","Papuga","Dzik","Krokodyl","Struś","Żółw"];
+	 
+	 function tygrys()
+	 {
+	 document.getElementById("zwierz").innerHTML=nazwa[0];
+	 document.getElementById("opis").innerHTML=opis_z[0];
+	 
+	 
+	 }
+	  function papuga()
+	 {
+	 document.getElementById("zwierz").innerHTML=nazwa[1];
+	 document.getElementById("opis").innerHTML=opis_z[1];
+	 
+	 
+	 }
+	  function dzik()
+	 {
+	 document.getElementById("zwierz").innerHTML=nazwa[2];
+	 document.getElementById("opis").innerHTML=opis_z[2];
+	 
+	 
+	 }
+	  function krokodyl()
+	 {
+	 document.getElementById("zwierz").innerHTML=nazwa[3];
+	 document.getElementById("opis").innerHTML=opis_z[3];
+	 
+	 
+	 }
+	  function strus()
+	 {
+	 document.getElementById("zwierz").innerHTML=nazwa[4];
+	 document.getElementById("opis").innerHTML=opis_z[4];
+	 
+	 
+	 }
+	  function zolw()
+	 {
+	 document.getElementById("zwierz").innerHTML=nazwa[5];
+	 document.getElementById("opis").innerHTML=opis_z[5];
+	 
+	 
+	 }
+	 </script>
+</head>
+<body>
+<div class="zwierzaki">
+
+<img src="tygrys.jpg" height=200 width=200 id="tygrys" onclick=tygrys() style="margin-left: 30px; margin-right: 30px;" >
+<img src="papuga.jpg" height=200 width=200 id="papuga" onclick=papuga() >
+<img src="dzik.jpg" height=200 width=200 id="dzik" onclick=dzik() style="margin-left: 30px; margin-right: 30px;" >
+<img src="krokodyl.jpg" height=200 width=200 id="krokodyl" onclick=krokodyl() >
+<img src="strus.jpg" height=200 width=200 id="strus" onclick=strus() style="margin-left: 30px; margin-right: 30px;">
+<img src="zolw.jpg" height=200 width=200 id="zolw" onclick=zolw()>
+
+</div>
+<div class="nazwazwierzeta">
+<p id="zwierz" style="font-family: bahnschrift; color: white;"></p>
+</div>
+<div class="opisz">
+<p id="opis" style="font-family: bahnschrift; color: black; font-size:20px"></p>
+</div>
+
+</body>
+</html>
